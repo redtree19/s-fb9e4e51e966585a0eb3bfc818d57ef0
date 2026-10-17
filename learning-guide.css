@@ -1,0 +1,56 @@
+/* A quiet, linear reading page inside the existing shared dialog. */
+.learning-guide{--guide-rule:#9ab4cc26;--guide-ink:#b7c6d4;--guide-blue:#8fbbd9;min-width:0}
+.learning-guide .modal-title{font-size:33px;letter-spacing:3px;margin-bottom:9px;padding-right:18px}
+.guide-preface{margin:0 0 24px;color:#94a9bc;font-size:12px;letter-spacing:1px;line-height:1.9}
+.guide-tabs{display:flex;gap:20px;border-bottom:1px solid var(--guide-rule);margin:0 0 28px}
+.guide-tabs button{position:relative;flex:1;min-width:0;padding:12px 2px 14px;background:none;color:#94a9bc;font:15px/1.5 var(--structure,var(--serif));letter-spacing:2px;transition:color .2s}
+.guide-tabs button[aria-selected=true]{color:#e6d3aa}
+.guide-tabs button[aria-selected=true]::after{content:'';position:absolute;bottom:-1px;left:14%;right:14%;height:1px;background:#d2b783;box-shadow:0 0 12px #d2b78330}
+.guide-tabs button:hover{color:#e6d3aa}
+.guide-page{outline:none}
+.guide-page:focus-visible{outline:1px solid var(--guide-blue);outline-offset:7px}
+.guide-heading h3{font:32px/1.5 var(--brush,var(--serif));font-weight:400;letter-spacing:3px;color:#e6d3aa;margin:0 0 5px}
+.guide-heading p{margin:0 0 24px;font:16px/1.9 var(--structure,var(--serif));color:#d2dce3;letter-spacing:.5px}
+.guide-facts{margin:0 0 29px}
+.guide-facts>div{display:grid;grid-template-columns:84px minmax(0,1fr);gap:14px;margin-top:12px}
+.guide-facts dt{color:var(--guide-blue);font-size:11px;line-height:2;letter-spacing:.7px;padding-top:1px}
+.guide-facts dd{margin:0;color:var(--guide-ink);font-size:12px;line-height:2}
+.guide-section-label{font:11px/1.7 var(--sans);font-weight:400;letter-spacing:2px;color:#8fabc0;margin:0 0 2px;padding:0 0 12px;border-bottom:1px solid var(--guide-rule)}
+.guide-route{list-style:none;padding:0;margin:0 0 11px}
+.guide-route li{display:grid;grid-template-columns:31px minmax(0,1fr);gap:17px;padding:20px 0;border-bottom:1px solid var(--guide-rule)}
+.guide-step-number{font:25px/1.4 var(--brush,var(--serif));color:#819eb5;text-align:center;padding-top:1px}
+.guide-route h5{font:18px/1.65 var(--structure,var(--serif));font-weight:400;color:#decda9;margin:0 0 7px}
+.guide-route p{font-size:13px;line-height:2;color:var(--guide-ink);margin:0;text-wrap:pretty}
+.learning-guide .guide-terms-disclosure{margin:0;border-bottom:1px solid var(--guide-rule)}
+.learning-guide .guide-terms-disclosure>summary{font-size:12px;min-height:56px;color:#b1c0cd}
+.guide-terms{margin:0;padding:0 0 5px}
+.guide-terms>div{display:grid;grid-template-columns:84px minmax(0,1fr);gap:14px;margin:0 0 14px}
+.guide-terms dt{font:13px/1.9 var(--structure,var(--serif));color:#d7c6a4}
+.guide-terms dd{margin:0;font-size:12px;line-height:1.9;color:var(--guide-ink)}
+.guide-sources{display:flex;flex-direction:column;align-items:flex-start;gap:7px;padding:22px 0 4px}
+.guide-sources>span{font-size:10px;letter-spacing:1.5px;color:#7893aa;margin-bottom:3px}
+.guide-sources a{color:#95b5ce;font-size:11px;line-height:1.9;text-decoration:none;overflow-wrap:anywhere}
+.guide-sources a:hover{color:#d8c69f;text-decoration:underline}
+.guide-sources .ui-icon{width:12px;height:12px;vertical-align:-2px;margin-left:4px}
+.guide-action{display:flex;justify-content:flex-end;margin-top:25px;padding-top:20px;border-top:1px solid var(--guide-rule)}
+.guide-enter{display:flex;align-items:center;justify-content:space-between;gap:34px;min-height:44px;background:#b6cfe30a;border:1px solid #92b2ca42;color:#dfcfac;padding:11px 17px;font:14px/1.5 var(--structure,var(--serif));letter-spacing:2px;transition:background .2s,border-color .2s}
+.guide-enter:hover{background:#b6cfe315;border-color:#b4c8d569}
+.guide-enter .ui-icon{width:17px;height:17px;color:#97b9d0}
+@media(max-width:600px){
+ .learning-guide .modal-title{font-size:29px;letter-spacing:2px}
+ .guide-preface{font-size:11px;letter-spacing:.5px;margin-bottom:18px}
+ .guide-tabs{gap:7px;margin-bottom:22px}
+ .guide-tabs button{font-size:13px;letter-spacing:1px;padding:12px 0}
+ .guide-heading h3{font-size:29px;letter-spacing:2px}
+ .guide-heading p{font-size:14px;margin-bottom:20px}
+ .guide-facts>div,.guide-terms>div{grid-template-columns:66px minmax(0,1fr);gap:12px}
+ .guide-facts dt{font-size:10px;letter-spacing:0;line-height:2.2}
+ .guide-facts dd,.guide-terms dd{font-size:12px;line-height:1.95}
+ .guide-route li{grid-template-columns:23px minmax(0,1fr);gap:12px;padding:18px 0}
+ .guide-step-number{font-size:23px}
+ .guide-route h5{font-size:16px}
+ .guide-route p{font-size:12px;line-height:2}
+ .guide-terms dt{font-size:12px}
+ .guide-action{margin-top:22px}
+ .guide-enter{font-size:13px;gap:25px}
+}

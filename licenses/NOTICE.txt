@@ -1,0 +1,60 @@
+周天 · 观象 / Zhou Tian
+
+Celestial Wheel by zaoxu001
+https://github.com/zaoxu001/celestial-wheel
+MIT; upstream commit 92523275172139b3f67f06a3fa080b4e4f0d4e3d.
+Modified celestial-wheel.js: palette/background, host-relative pointer coordinates,
+touch picking, frame delta, reduced motion, visibility suspension, resource disposal.
+Data tables and classical Xiang text are retained from the MIT source.
+See celestial-wheel-MIT.txt.
+
+Mingpan by ChesterRa, 0.1.8
+https://github.com/ChesterRa/mingpan
+Apache License 2.0; upstream commit d4cab8f27d14541c1219650318c0c40e80cb492c.
+Vendored core, services, utils and shared modules.
+Modified LiuyaoService.ts and liuyao/types.ts to preserve minutes at solar-term boundaries.
+See mingpan-Apache-2.0.txt.
+
+iztro by SylarLong and contributors: MIT; see iztro-MIT.txt.
+lunar-javascript by 6tail: MIT; see lunar-MIT.txt.
+Three.js by three.js authors: MIT; see three-MIT.txt.
+Exact installed versions are pinned in package-lock.json.
+
+Classical readings (added 2026-10-15)
+Public-domain ancient passages from Wikisource: Zhou Yi, Mei Hua Yi Shu,
+San Ming Tong Hui, Zi Wei Dou Shu Quan Shu, Dun Jia Yan Yi,
+Qi Men Dun Jia Tong Zong. Per-topic links are in src/classical.js;
+per-hexagram source and Wikisource revision IDs are in src/data/zhouyi.json.
+Zhou Yi transcription located via toastedqu/meihua, commit
+8bfacf71c4158d0b477fe43e66ac4c4089c832ad, app/data/classics.json.
+Only ancient judgment, line, and Great Image passages plus their source metadata
+were extracted; no implementation code or modern commentary was copied.
+https://github.com/toastedqu/meihua
+Modern explanations are original editorial summaries, not literal translations.
+Ziwei terminology also references official iztro learning documentation:
+https://docs.iztro.com/learn/palace
+https://docs.iztro.com/learn/major-star
+https://docs.iztro.com/learn/mutagen
+
+Original interface, process adapters and educational commentary by this project.
+Visual redesign (2026-10-15): original SVG symbols, Chinese observatory palette,
+CSS coin geometry, five-system chart presentation, and linked reading interactions.
+Algorithm entry transitions (2026-10-15): sample the existing rendered wheel into
+particles and morph them into original SVG ritual diagrams. Topic-based result
+categories are original editorial explanations linked to the current chart data.
+Self-hosted Noto Serif SC and Noto Sans SC variable font subsets, SIL OFL 1.1.
+Original font metadata is preserved inside the WOFF2 files. Subset generation:
+scripts/subset-fonts.py. Source projects and full license texts:
+https://github.com/notofonts/noto-cjk
+https://github.com/google/fonts/tree/main/ofl/notoserifsc
+https://github.com/google/fonts/tree/main/ofl/notosanssc
+See NotoSerifSC-OFL.txt and NotoSansSC-OFL.txt.
+Interpretations are rule-based cultural explanations, not verified future predictions.
+No remote AI service is invoked. User input stays in the browser; saved records use
+localStorage only after the user clicks Save. Exported files contain user inputs.
+
+Projected observation scenes (2026-10-16): original retained Canvas renderer,
+3D projection, depth-weighted strokes, particle paths, and planar chart handoff.
+Self-hosted Ma Shan Zheng by Ma Shan Zheng, SIL OFL 1.1.
+https://github.com/google/fonts/tree/main/ofl/mashanzheng
+See MaShanZheng-OFL.txt. Subset script: scripts/subset-brush.py.

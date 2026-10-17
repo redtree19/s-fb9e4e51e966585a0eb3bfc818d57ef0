@@ -1,0 +1,32 @@
+/* Inline references stay within the reading typography; selection belongs to the chart. */
+.chart-reference{display:inline;margin:0;padding:0 1px;border:0;border-radius:1px;background:transparent;color:#d8c59d;font:inherit;line-height:inherit;letter-spacing:inherit;text-align:inherit;text-decoration:underline;text-decoration-color:#a7b9c06b;text-decoration-thickness:1px;text-underline-offset:4px;cursor:pointer;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.chart-reference:hover,.chart-reference.is-reference-active{color:#f2dfb7;background:#7caed51a;text-decoration-color:#bad7ec}
+.chart-reference:focus-visible{outline:1px solid #9ec9e8;outline-offset:3px}
+.chart-link-note{position:sticky;top:12px;z-index:5;width:calc(100% - 52px);max-width:930px;margin:18px auto 0;padding:16px 20px;display:flex;align-items:center;justify-content:space-between;gap:22px;border:1px solid #8ab9d74d;border-left:2px solid #b8d7e9;background:linear-gradient(115deg,#132b40f7,#0b1a2bf5);box-shadow:0 8px 35px #030b1660;backdrop-filter:blur(14px);scroll-margin-top:18px}
+.chart-link-note:focus{outline:none}.chart-link-note:focus-visible{outline:1px solid #9bbbd7;outline-offset:3px}
+.chart-link-copy{min-width:0}.chart-link-copy strong{font:18px/1.5 var(--structure,var(--serif));font-weight:400;letter-spacing:1px;color:#ecd8ad}.chart-link-copy p{margin:5px 0 0;font:12px/1.85 var(--sans);color:#b1c6d8;overflow-wrap:anywhere}
+.chart-link-actions{display:flex;align-items:center;gap:15px;flex-shrink:0}.chart-link-actions button{background:none;border:0;border-bottom:1px solid #8cb4cf66;padding:9px 0;color:#d8c8a5;white-space:nowrap;font:12px/1.5 var(--structure,var(--serif))}.chart-link-actions #chart-link-clear{color:#8da7bc;border-color:transparent}
+.chart-content [data-chart-node]{scroll-margin:180px 20px 100px;transition:background-color .2s,box-shadow .2s,outline-color .2s}
+.chart-content .is-link-context{background-color:#28557626!important;box-shadow:inset 0 0 0 1px #7ca9ca52}
+.chart-content .is-linked{outline:1px solid #ddc695;outline-offset:4px;box-shadow:0 0 0 5px #5f9fc31a,0 0 28px #719dc824;background-color:#477ea83d!important;color:#ffe4af!important}
+.chart-content .hex-card.is-linked{outline-offset:14px;background-color:#1e496325!important}
+.chart-content .yao.is-linked{outline-offset:5px;box-shadow:0 0 22px #90bfdf57;background:transparent!important}
+.chart-content .yao.is-linked>span{background:#f5dfae;box-shadow:0 0 12px #d7cda765}
+.chart-content .palace.is-linked{outline-offset:1px;border-color:#c9d5d5;background:#2b527171!important}
+.chart-content .pillar.is-linked{outline-offset:2px}
+.chart-content .star-name.is-linked,.chart-content .mutation.is-linked,.chart-content .pillar-root .is-linked{border-radius:1px;outline-offset:2px}
+.chart-content .element-orbit g.is-linked{outline:0;box-shadow:none;background:none!important;filter:drop-shadow(0 0 5px #96c6e28c)}
+.chart-content .element-orbit g.is-linked text{fill:#ffe2a6}.chart-content .element-orbit g.is-linked circle{r:5;fill:#ffe2a6;stroke:#ceeaff;stroke-width:1}
+.chart-role{font:10px/1.5 var(--structure,var(--serif));color:#a8c7dd;letter-spacing:1px;white-space:nowrap}
+.yao>.chart-role{position:absolute;right:-38px;top:-5px}
+.hex-card>small .chart-role{display:inline-block;margin-left:4px;font-style:normal;color:#adcde2;border-bottom:1px solid #8cb3d063}
+.chart-link-hint{font:11px/1.8 var(--sans);color:#829fb5;margin:0 0 17px}
+.qimen-grid .hosted-stem{display:inline-block;font:10px/1.5 var(--structure,var(--serif));color:#9fc6e0;margin-left:5px;align-self:end}
+.qimen-grid .stem-pair:has(.hosted-stem){display:grid;grid-template-columns:auto auto;column-gap:5px;row-gap:2px}
+.qimen-grid .stem-pair .hosted-stem{grid-column:1/-1;justify-self:end;margin:0;white-space:nowrap}
+.qimen-grid .gate-name{white-space:nowrap;flex-shrink:0}
+.element-orbit svg{display:block;margin:0 auto}.element-orbit>span{display:block;margin-top:8px;line-height:1.8}
+.pillar-root [data-chart-node]{display:inline-block}.palace .substars [data-chart-node]{display:inline-block}.chart-content .palace .mutation{display:inline-block}
+@media(max-width:760px){.chart-link-note{width:calc(100% - 30px);top:8px;gap:10px;padding:12px 14px;flex-wrap:wrap}.chart-link-copy strong{font-size:16px}.chart-link-copy p{font-size:12px}.chart-link-actions{width:100%;justify-content:flex-end;gap:22px}.chart-link-actions button{padding:5px 0;min-height:30px}.yao>.chart-role{right:-30px;font-size:9px}.chart-content .hex-card.is-linked{outline-offset:8px}.chart-content [data-chart-node]{scroll-margin-top:210px}}
+.no-motion .chart-content [data-chart-node]{transition:none}
+@media(prefers-reduced-motion:reduce){.chart-content [data-chart-node]{transition:none}}
